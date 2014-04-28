@@ -39,7 +39,7 @@ type Channel struct {
 	Concurrency int
 	// Number of HTTP requests to buffer before sending to Librato API.
 	BufferSize int
-	// Internal Data structures
+
 	sync.Mutex
 	buffer   map[string]*bucket.Bucket
 	outbox   chan *bucket.LibratoMetric
