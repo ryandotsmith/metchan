@@ -113,16 +113,15 @@ func (c *Channel) Measure(name string, v float64) {
 	b.Append(v)
 }
 
-func (c *Channel) CountReq(user string) {
+func (c *Channel) Count(name string) {
 	if !c.Enabled {
 		return
 	}
-	usr := strings.Replace(user, "@", "_at_", -1)
 	id := &bucket.Id{
 		Resolution: c.FlushInterval,
-		Name:       c.MetricPrefix + "." + "receiver.requests",
+		Name:       c.MetricPrefix + "." + name,
 		Units:      "requests",
-		Source:     usr,
+		Source:     c.Source,
 		Type:       "counter",
 	}
 	b := c.getBucket(id)
