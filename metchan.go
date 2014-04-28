@@ -114,7 +114,7 @@ func (c *Channel) Measure(name string, v float64) {
 	b.Append(v)
 }
 
-func (c *Channel) Count(name string) {
+func (c *Channel) Count(name string, v float64) {
 	if !c.Enabled {
 		return
 	}
@@ -126,7 +126,7 @@ func (c *Channel) Count(name string) {
 		Type:       "counter",
 	}
 	b := c.getBucket(id)
-	b.Incr(1)
+	b.Incr(v)
 }
 
 func (c *Channel) getBucket(id *bucket.Id) *bucket.Bucket {
