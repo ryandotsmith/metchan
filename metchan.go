@@ -106,7 +106,7 @@ func (c *Channel) Measure(name string, v float64) {
 	id := &bucket.Id{
 		Resolution: c.FlushInterval,
 		Name:       c.MetricPrefix + "." + name,
-		Units:      "ms",
+		Units:      "",
 		Source:     c.Source,
 		Type:       "measurement",
 	}
@@ -121,7 +121,7 @@ func (c *Channel) Count(name string, v float64) {
 	id := &bucket.Id{
 		Resolution: c.FlushInterval,
 		Name:       c.MetricPrefix + "." + name,
-		Units:      "requests",
+		Units:      "",
 		Source:     c.Source,
 		Type:       "counter",
 	}
