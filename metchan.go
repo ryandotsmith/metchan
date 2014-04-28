@@ -1,5 +1,5 @@
 // An internal metrics channel.
-// l2met internal components can publish their metrics
+// Go systems can publish their metrics
 // here and they will be outletted to Librato.
 package metchan
 
