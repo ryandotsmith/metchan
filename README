@@ -1,0 +1,5 @@
+METCHAN
+
+A metrics channel for Go programs that wish to surface metrics to Librato.
+
+http://godoc.org/github.com/ryandotsmith/metchan
