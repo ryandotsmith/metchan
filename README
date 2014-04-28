@@ -1,5 +1,5 @@
 METCHAN
 
-A metrics channel for Go programs that wish to surface metrics to Librato.
+Count, Measure, and Time your Go system. Send the results to Librato.
 
 http://godoc.org/github.com/ryandotsmith/metchan
