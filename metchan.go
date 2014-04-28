@@ -47,6 +47,7 @@ type Channel struct {
 	password string
 }
 
+// This function must be called in order for this package to do anything.
 func (c *Channel) Start() {
 	if c.Enabled {
 		c.setup()
