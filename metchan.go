@@ -190,7 +190,7 @@ func (c *Channel) post(m *bucket.LibratoMetric) error {
 		return err
 	}
 	req.Header.Add("Content-Type", "application/json")
-	req.Header.Add("User-Agent", "l2met-metchan/0")
+	req.Header.Add("User-Agent", "metchan/0")
 	req.Header.Add("Connection", "Keep-Alive")
 	req.SetBasicAuth(c.username, c.password)
 	resp, err := http.DefaultClient.Do(req)
