@@ -8,3 +8,9 @@ FAQ
 
 > Is this different than go-metrics?
 < Probably not. I wrote this pkg a couple years ago and I recently extracted it into a public pkg. I wanted to use metchan out of comfort.
+
+> What makes metchan so comfortable?
+<
+    func ƒ() {
+        defer metchan.Time("ƒ", time.Now())
+    }
