@@ -3,3 +3,8 @@ METCHAN
 Count, Measure, and Time your Go system. Send the results to Librato.
 
 http://godoc.org/github.com/ryandotsmith/metchan
+
+FAQ
+
+> Is this different than go-metrics?
+< Probably not. I wrote this pkg a couple years ago and I recently extracted it into a public pkg. I wanted to use metchan out of comfort.
